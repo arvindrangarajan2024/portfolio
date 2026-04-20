@@ -4,7 +4,6 @@ import Header from '~/components/widgets/Header.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Content from '~/components/widgets/Content.astro';
 import Features3 from '~/components/widgets/Features3.astro';
-import Steps from '~/components/widgets/Steps.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import { getPermalink } from '~/utils/permalinks';
@@ -214,19 +213,6 @@ const metadata = {
     ]}
   />
 
-  <!-- Experience -->
-  <Steps
-    id="experience"
-    title="Experience"
-    items={[
-      {
-        title: 'AI Product Marketer <br /> <span class="text-sm font-normal">Current Role</span>',
-        description: 'Building and marketing AI-powered products. Focused on local, privacy-first tools that make AI practical for everyday users.',
-        icon: 'tabler:briefcase',
-      },
-    ]}
-    classes={{ container: 'max-w-3xl' }}
-  />
 
   <!-- Medium Publications -->
   <Features2
