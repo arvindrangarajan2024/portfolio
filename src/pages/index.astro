@@ -7,6 +7,7 @@ import Features3 from '~/components/widgets/Features3.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import Features2 from '~/components/widgets/Features2.astro';
 import { getPermalink } from '~/utils/permalinks';
 import localAIFileOrganizerIcon from '~/assets/images/local-ai-file-organizer.png';
 import arvindPhoto from '~/assets/images/arvind.png';
@@ -25,8 +26,10 @@ const metadata = {
         { text: 'About',    href: '#about' },
         { text: 'Projects', href: '#projects' },
         { text: 'Skills',   href: '#skills' },
+        { text: 'Writing',  href: '#writing' },
         { text: 'Blog',     href: '#blog' },
         { text: 'GitHub',   href: 'https://github.com/arvindrangarajan2024', target: '_blank' },
+        { text: 'Medium',   href: 'https://medium.com/@arvind-rangarajan', target: '_blank' },
       ]}
       actions={[
         {
@@ -237,6 +240,54 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </BlogLatestPosts>
+
+  <!-- Medium Publications -->
+  <Features2
+    id="writing"
+    title="Writing on Medium"
+    subtitle="Thoughts on AI, product building, and the intersection of technology and creativity."
+    tagline="Publications"
+    columns={3}
+    items={[
+      {
+        title: 'AI Tools & Productivity',
+        description: 'Exploring how on-device AI tools change the way we work — without sacrificing privacy.',
+        icon: 'tabler:brain',
+        callToAction: {
+          text: 'Read on Medium',
+          href: 'https://medium.com/@arvind-rangarajan',
+          target: '_blank',
+          icon: 'tabler:arrow-right',
+        },
+      },
+      {
+        title: 'Product Marketing for AI',
+        description: 'How to position, message, and launch AI products in a market full of noise.',
+        icon: 'tabler:speakerphone',
+        callToAction: {
+          text: 'Read on Medium',
+          href: 'https://medium.com/@arvind-rangarajan',
+          target: '_blank',
+          icon: 'tabler:arrow-right',
+        },
+      },
+      {
+        title: 'Building in Public',
+        description: 'Behind-the-scenes of shipping real software — from idea to macOS app.',
+        icon: 'tabler:code',
+        callToAction: {
+          text: 'Read on Medium',
+          href: 'https://medium.com/@arvind-rangarajan',
+          target: '_blank',
+          icon: 'tabler:arrow-right',
+        },
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
 
   <!-- CTA -->
   <CallToAction
