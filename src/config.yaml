@@ -1,6 +1,6 @@
 site:
   name: Arvind Rangarajan
-  site: 'https://arvindrangarajan.vercel.app'
+  site: 'https://arvindrangarajan.me'
   base: '/'
   trailingSlash: false
 
