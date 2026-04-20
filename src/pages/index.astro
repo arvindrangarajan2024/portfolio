@@ -5,7 +5,6 @@ import Hero from '~/components/widgets/Hero.astro';
 import Content from '~/components/widgets/Content.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import Steps from '~/components/widgets/Steps.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import { getPermalink } from '~/utils/permalinks';
@@ -27,7 +26,6 @@ const metadata = {
         { text: 'Projects', href: '#projects' },
         { text: 'Skills',   href: '#skills' },
         { text: 'Writing',  href: '#writing' },
-        { text: 'Blog',     href: '#blog' },
         { text: 'GitHub',   href: 'https://github.com/arvindrangarajan2024', target: '_blank' },
         { text: 'Medium',   href: 'https://medium.com/@arvind-rangarajan', target: '_blank' },
       ]}
@@ -277,17 +275,6 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Features2>
-
-  <!-- Blog -->
-  <BlogLatestPosts
-    id="blog"
-    title="Writing"
-    information="Thoughts on AI, product building, and the intersection of technology and creativity."
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </BlogLatestPosts>
 
   <!-- CTA -->
   <CallToAction
