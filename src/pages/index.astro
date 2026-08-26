@@ -6,7 +6,6 @@ import Content from '~/components/widgets/Content.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Features2 from '~/components/widgets/Features2.astro';
-import { getPermalink } from '~/utils/permalinks';
 import localAIFileOrganizerIcon from '~/assets/images/local-ai-file-organizer.png';
 import arvindPhoto from '~/assets/images/arvind.png';
 
@@ -69,7 +68,7 @@ const metadata = {
   <!-- About -->
   <Content
     id="about"
-    columns={3}
+    columns={2}
     items={[
       {
         icon: 'tabler:brand-github',
@@ -85,13 +84,6 @@ const metadata = {
           target: '_blank',
           text: 'LinkedIn',
           href: 'https://www.linkedin.com/in/arvindrangarajan1/',
-        },
-      },
-      {
-        icon: 'tabler:mail',
-        callToAction: {
-          text: 'Get in touch',
-          href: getPermalink('/contact'),
         },
       },
     ]}
